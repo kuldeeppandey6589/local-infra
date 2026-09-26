@@ -36,3 +36,7 @@ services:
 
 volumes:
   mongo-data:
+
+networks:
+  test:
+    driver: bridge
