@@ -16,7 +16,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    image: kuldeepofficial/backend:latest
+    image: kuldeepofficial/test-backend:latest
     container_name: test-backend
     restart: always
     ports:
@@ -28,7 +28,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    image: kuldeepofficial/frontend:latest
+    image: kuldeepofficial/test-frontend:latest
     container_name: test-frontend
     restart: always
     ports:
