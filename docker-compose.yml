@@ -4,6 +4,7 @@ services:
     build:
       context: ../frontend
       dockerfile: Dockerfile
+    image: kuldeepofficial/test-frontend:latest  
     container_name: test-frontend
     ports:
       - "3000:3000"
@@ -13,6 +14,7 @@ services:
     build:
       context: ../backend
       dockerfile: Dockerfile
+    image: kuldeepofficial/test-backend:latest  
     container_name: test-backend
     ports:
       - "8080:8080"
