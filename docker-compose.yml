@@ -17,6 +17,7 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     image: kuldeepofficial/test-backend:latest
+    platform: linux/amd64
     container_name: test-backend
     restart: always
     ports:
@@ -29,6 +30,7 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     image: kuldeepofficial/test-frontend:latest
+    platform: linux/amd64
     container_name: test-frontend
     restart: always
     ports:
