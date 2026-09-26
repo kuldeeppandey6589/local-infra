@@ -20,7 +20,7 @@ services:
     build:
       context: ../backend
       dockerfile: Dockerfile
-
+    image: kuldeepofficial/test-backend:latest
     container_name: test-backend
     restart: unless-stopped
 
@@ -40,7 +40,7 @@ services:
     build:
       context: ../frontend
       dockerfile: Dockerfile
-
+    image: kuldeepofficial/test-frontend:latest
     container_name: test-frontend
     restart: unless-stopped
 
