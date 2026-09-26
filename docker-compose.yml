@@ -1,4 +1,17 @@
+version: '3.8'
+
 services:
+
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - test
+    restart: unless-stopped
 
   backend:
     build:
@@ -21,3 +34,6 @@ services:
     restart: always
     ports:
       - "3000:3000"
+
+volumes:
+  mongo-data:
